@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Frontend Mentor | Todo app</title>
+</head>
+
+<body class="josefin-sans-uniquifier bg-dark-blue">
+  <div class="todo-parent">
+    <div class="cover-img"></div>
+    <div class="todo-data p-2">
+      <div class="todo-title d-flex justify-content-between align-items-center">
+        <h1 class="text-white">TODO</h1>
+        <button id="swich_mode" class="swich_mode bg-transparent border-0 outline-0"> <img src="images/icon-sun.svg"
+            id="img_change"></button>
+
+      </div>
+      <div class="creat-new dark-mode">
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="d-flex align-items-center dark-mode rounded rounded-2 w-100">
+            <input type="text" id="todo_value" placeholder="Create a new todo..."
+              class="dark-mode rounded rounded-2 w-100 p-3 overflow-y">
+
+          </div>
+
+        </div>
+
+      </div>
+      <div class="d-flex justify-content-end w-100 my-2">
+        <button class="btn-costum1 dark-mode" id="add_todo">
+          add
+        </button>
+      </div>
+
+
+      <div class="todo-list dark-mode rounded rounded-2 mt-4">
+        <div class="d-flex justify-content-between align-items-center">
+          <div class=" p-0 m-0 align-items-center dark-mode h-100 w-100" >
+
+            <div class="w-100 position-1 costum1 p-3">
+              <div class="d-flex justify-content-between align-items-center">
+                  <div class="d-flex flex-wrab gap-3 align-items-center w-100 justify-content-between dark-mode">
+                      <p class="text_LightGray">there is 0 items</p>
+                      <div class="d-flex gap-3 align-items-center dark-mode">
+                          <button class="btn-costum btn-1" id="filter_all">All</button>
+                          <button class="btn-costum btn-1" id="filter_active">Active</button>
+                          <button class="btn-costum btn-1" id="filter_completed">Completed</button>
+                      </div>
+                      <button class="btn-costum btn-1" id="clear_completed">Clear Completed</button>
+                  </div>
+              </div>
+          </div>
+
+          <div class="row p-0 m-0 align-items-center dark-mode h-100 w-100" id="todo_container"></div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/try.js"></script>
+</body>
+
+</html>
