@@ -37,7 +37,7 @@
 
       </div>
       <div class="d-flex justify-content-end w-100 my-2">
-        <button class="btn-costum1 dark-mode" id="add_todo">
+        <button class="btn-costum2 dark-mode" id="add_todo">
           add
         </button>
       </div>
@@ -48,15 +48,29 @@
           <div class=" p-0 m-0 align-items-center dark-mode h-100 w-100" >
 
             <div class="w-100 position-1 costum1 p-3">
-              <div class="d-flex justify-content-between align-items-center">
+              <div class="d-flex justify-content-between align-items-center h-100">
                   <div class="d-flex flex-wrab gap-3 align-items-center w-100 justify-content-between dark-mode">
                       <p class="text_LightGray">there is 0 items</p>
-                      <div class="d-flex gap-3 align-items-center dark-mode">
+                      <div class="collaps">
+                        <div class="d-flex gap-3 align-items-center dark-mode">
                           <button class="btn-costum btn-1" id="filter_all">All</button>
                           <button class="btn-costum btn-1" id="filter_active">Active</button>
                           <button class="btn-costum btn-1" id="filter_completed">Completed</button>
                       </div>
                       <button class="btn-costum btn-1" id="clear_completed">Clear Completed</button>
+                      </div>
+
+                      <div class="dropdown enlarge">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <i class="fa-solid fa-bars"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li class="dropdown-item"><button class="btn-costum btn-1" id="filter_all">All</button></li>
+                          <li class="dropdown-item"><button class="btn-costum btn-1" id="filter_active">Active</button></li>
+                          <li class="dropdown-item"><button class="btn-costum btn-1" id="filter_completed">Completed</button></li>
+                          <li class="dropdown-item"><button class="btn-costum btn-1" id="clear_completed">Clear Completed</button></li>
+                        </ul>
+                      </div>
                   </div>
               </div>
           </div>
@@ -69,6 +83,7 @@
     </div>
   </div>
 
+  <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/try.js"></script>
 </body>
 
